@@ -1,0 +1,5 @@
+if(EXISTS "/workspaces/fizzbuzz/build/mytests[1]_tests.cmake")
+  include("/workspaces/fizzbuzz/build/mytests[1]_tests.cmake")
+else()
+  add_test(mytests_NOT_BUILT mytests_NOT_BUILT)
+endif()
